@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	     <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	     <meta name="format-detection" content="telephone=no,email=no,adress=no">
+	     <script src="js/swiper-3.3.1.min.js"></script> 
+	     <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	     <link rel="stylesheet" href="css/style.css">
+	     <link rel="stylesheet" href="icon/iconfont.css">
+	    <script>    
+	      (function(doc,win){
+	        doc.documentElement.style.fontSize = doc.documentElement.clientWidth/375*50+"px";
+	      })(document,window)	
+	    	
+	    </script>
+</head>
+<body>
+  <div class="box">
+  	 <header>
+   	  <p>
+   	  	 假日旅行
+   	  </p>
+   </header>
+   <section>
+   	<div class="swiper-container">
+   		<div class="swiper-wrapper">
+   			<div class="swiper-slide"><img src="img/1.png" alt=""></div>
+   			<div class="swiper-slide"><img src="img/1.png" alt=""></div>
+   			<div class="swiper-slide"><img src="img/1.png" alt=""></div>
+   			<div class="swiper-slide"><img src="img/1.png" alt=""></div>
+   			<div class="swiper-slide"><img src="img/1.png" alt=""></div>
+   		</div>
+   	</div>
+   	<div class="control">
+   		<ul>
+   			 <li class="bg" id="line"></li>
+   		</ul>
+   	</div>
+   	<div class="list">
+   		<dl>
+   			<dt><p class="cl1"><span class="iconfont">&#xe653;</span></p></dt>
+   			<dd>热门景点</dd>
+   		</dl>
+   		<dl>
+   			<dt><p class="cl2"><span class="iconfont">&#xe60f;</span></p></dt>
+   			<dd>记账本</dd>
+   		</dl>
+   		<dl>
+   			<dt><p class="cl3"><span class="iconfont">&#xe666;</span></p></dt>
+   			<dd>境内/境外</dd>
+   		</dl>
+   		<dl>
+   			<dt><p class="cl4"><span class="iconfont">&#xe60c;</span></p></dt>
+   			<dd>轮船票</dd>
+   		</dl>
+   	</div>
+   		<div class="list">
+   		<dl>
+   			<dt><p class="cl5"><span class="iconfont">&#xe63a;</span></p></dt>
+   			<dd>酒店</dd>
+   		</dl>
+   		<dl>
+   			<dt><p class="cl6"><span class="iconfont">&#xe60c;</span></p></dt>
+   			<dd>飞机票</dd>
+   		</dl>
+   		<dl>
+   			<dt><p class="cl7"><span class="iconfont">&#xe642;</span></p></dt>
+   			<dd>火车票</dd>
+   		</dl>
+   		<dl>
+   			<dt><p class="cl8"><span class="iconfont">&#xe62f;</span></p></dt>
+   			<dd>行程记录</dd>
+   		</dl>
+   	</div>
+   	<div class="main">
+   		<div class="left">
+   			<div>
+   				<p><span>热销榜</span></br>大家都爱玩</p>
+   				<img src="img/2.png" alt="">
+   			</div>
+   		</div>
+   		<div class="right">
+   			 <div>
+   			 	<p><span>我身边</span></br>附近有什么</p>
+   				<img src="img/3.png" alt="">
+   			 </div>
+   		</div>
+   	</div>
+   	<div class="main">
+   		<div class="left">
+   			<div>
+   				<p><span>千元出国</span></br>周二 五开枪</p>
+   				<img src="img/4.png" alt="">
+   			</div>
+   		</div>
+   		<div class="right">
+   			 <div>
+   			 	<p><span>旅游日历</span></br>1元门票早知道</p>
+   				<img src="img/2.png" alt="">
+   			 </div>
+   		</div>
+   	</div>
+   </section>
+   <footer>
+   	<dl>
+   		<dt class="iconfont">&#xe653;</dt>
+   		<dd>首页</dd>
+   	</dl>
+   		<dl>
+   		<dt class="iconfont">&#xe60f;</dt>
+   		<dd>订单</dd>
+   	</dl>
+   		<dl>
+   		<dt class="iconfont">&#xe62e;</dt>
+   		<dd>我的</dd>
+   	</dl>
+   		<dl>
+   		<dt class="iconfont">&#xe637;</dt>
+   		<dd>更多</dd>
+   	</dl>
+   </footer>
+  </div>
+  
+	<script>
+	 window.onload = function(){
+	 	var line = document.getElementById("line");
+	 	var myswiper = new Swiper(".swiper-container",{
+		    	onTransitionStart:function(){
+		    	var ind  =myswiper.activeIndex;
+                 line.style.transform ="translate3d("+100*ind+"%,0,0)";
+                 
+		    	}
+		    })
+	 }
+		    
+	</script>
+</body>
+</html>
